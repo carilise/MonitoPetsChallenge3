@@ -1,14 +1,14 @@
 import cadeau from "../../assets/img/Products/Cadeau.png";
 import { motion } from "motion/react"
 // importer mes images products
-import product1 from "../../assets/img/Products/product1.png";
-import product2 from "../../assets/img/Products/product2.png";
-import product3 from "../../assets/img/Products/product3.png";
-import product4 from "../../assets/img/Products/product4.png";
-import product5 from "../../assets/img/Products/product5.png";
-import product6 from "../../assets/img/Products/product6.png";
-import product7 from "../../assets/img/Products/product7.png";
-import product8 from "../../assets/img/Products/product8.png";
+import product1 from "../../assets/img/Products/Product1.png";
+import product2 from "../../assets/img/Products/Product2.png";
+import product3 from "../../assets/img/Products/Product3.png";
+import product4 from "../../assets/img/Products/Product4.png";
+import product5 from "../../assets/img/Products/Product5.png";
+import product6 from "../../assets/img/Products/Product6.png";
+import product7 from "../../assets/img/Products/Product7.png";
+import product8 from "../../assets/img/Products/Product8.png";
 
 // src/components/pages/productGallery.tsx
 const products = [

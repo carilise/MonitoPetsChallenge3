@@ -1,7 +1,7 @@
 export default function BreadcrumbMarketSVG() {
   return (
-    <nav className="mt-8 max-w-[1500px] mx-auto px-8">
-      <ul className="flex items-center gap-2 text-sm font-medium text-[#003459]">
+  <nav className="mt-6 max-w-[1500px] mx-auto px-4 sm:px-6 md:px-8">
+      <ul className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm font-medium text-[#003459]">
         <li>
           <a href="/" className="hover:underline">Home</a>
         </li>

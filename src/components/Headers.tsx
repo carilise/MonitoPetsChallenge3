@@ -26,11 +26,11 @@ export default function Headers() {
 
   return (
     <header
-      className={`sticky top-0 w-full bg-[#FCEED5] 
-        ${scrolled ? "bg-white" : ""}
+      className={`sticky top-0 w-full bg-transparent 
+        ${scrolled ? "bg-black" : ""}
            px-4 sm:px-6 md:px-10 py-4 z-30 overflow-x-hidden `}
     >
-      <div className="mt-8 max-w-[1500px] mx-auto px-8 flex items-center justify-between">
+      <div className="max-w-screen-xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="hidden md:flex items-center">
           <img src={logo} alt="Monitö Logo" className="h-8 w-auto" />
