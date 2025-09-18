@@ -290,7 +290,13 @@ export default function Filter() {
       {/* version mobile  */}
       <div className="block md:hidden mt-6 px-4">
         <div className="flex justify-between items-center mb-4">
-          <span className="text-sm text-[#003459]">Sort by: Popular</span>
+          <select className="text-sm text-[#003459] border border-[#003459] rounded-full px-4 py-1 bg-white focus:outline-none focus:ring-2 focus:ring-[#003459]">
+            <option value="popular">Sort by: Popular</option>
+            <option value="newest">Newest</option>
+            <option value="priceLow">Price: Low to High</option>
+            <option value="priceHigh">Price: High to Low</option>
+          </select>
+
           <button className="text-sm text-[#003459] border border-[#003459] px-3 py-1 rounded-full">
             Filter
           </button>
