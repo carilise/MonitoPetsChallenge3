@@ -308,31 +308,37 @@ export default function Filter() {
         </div>
 
         {/* Colonne produits*/}
-        <div className="grid grid-cols-2 gap-2 px-4 ">
-          {products.map((product, index) => (
-            <div
-              key={index}
-              className="bg-white border rounded-xl shadow-sm overflow-hidden hover:shadow-md transition"
-            >
-              <img
-                src={product.image}
-                alt={product.breed}
-                className="w-full h-[140px] object-cover"
-              />
-              <div className="p-3 space-y-1">
-                <h3 className="text-[#003459] font-semibold text-[15px] leading-tight">
-                  {product.code} - {product.breed}
-                </h3>
-                <p className="text-[#667479] text-[13px]">
-                  Gender: {product.gender}
-                </p>
-                <p className="text-[#667479] text-[13px]">Age: {product.age}</p>
-                <p className="text-black font-bold text-[14px]">
-                  {product.price}
-                </p>
+        <div className="grid grid-cols-2 gap-4 px-4 ">
+          {products?.length > 0 ? (
+            products.map((product, index) => (
+              <div
+                key={index}
+                className="bg-white border rounded-xl shadow-sm overflow-hidden hover:shadow-md transition"
+              >
+                <img
+                  src={product.image}
+                  alt={product.breed}
+                  className="w-full h-[140px] object-cover"
+                />
+                <div className="p-3 space-y-1">
+                  <h3 className="text-[#003459] font-semibold text-[15px] leading-tight">
+                    {product.code} - {product.breed}
+                  </h3>
+                  <p className="text-[#667479] text-[13px]">
+                    Gender: {product.gender}
+                  </p>
+                  <p className="text-[#667479] text-[13px]">
+                    Age: {product.age}
+                  </p>
+                  <p className="text-black font-bold text-[14px]">
+                    {product.price}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))
+          ) : (
+            <p className="text-red-500">Aucun produit trouvé</p>
+          )}
         </div>
 
         {/* Pagination */}

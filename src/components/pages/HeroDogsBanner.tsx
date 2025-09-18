@@ -82,7 +82,7 @@ const HeroDogsBanner = () => {
       {/* version mobile */}
       <div className="block md:hidden px-4 pt-6 pb-0">
         <div className="bg-[#FCEED5] rounded-lg">
-          <div className="w-full max-w-[360px] mx-auto text-left ">
+          <div className="p-4 w-full max-w-[360px] mx-auto text-left ">
             <h1 className="text-[28px] font-[800] leading-[36px] text-[#003459] mb-2">
               One More Friend
             </h1>

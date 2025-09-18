@@ -28,9 +28,7 @@ export default function Category() {
         <HeroDogsBanner />
       </motion.div>
 
-      <motion.div {...scrollFade} transition={{ duration: 0.5, delay: 0.3 }}>
         <Filter />
-      </motion.div>
 
       <motion.div {...scrollFade} transition={{ duration: 0.5, delay: 0.4 }}>
         <Footer />
